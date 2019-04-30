@@ -1,4 +1,5 @@
 import React from 'react';
+import NewTodo from '../containers/NewTodoContainer';
 
 function AppView(props) {
     return (
@@ -6,6 +7,7 @@ function AppView(props) {
             <Header {...props} />
             <Main {...props} />
             <Footer {...props} />
+            <NewTodo />
         </div>
     );
 }

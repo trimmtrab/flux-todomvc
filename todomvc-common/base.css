@@ -554,3 +554,10 @@ hr {
 		margin: 130px auto 40px auto;
 	}
 }
+
+#form {
+	position: absolute;
+	bottom: -150px;
+	right: 0;
+	left: 15px;
+}
