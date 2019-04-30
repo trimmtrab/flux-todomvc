@@ -3,7 +3,7 @@ import TodoDispatcher from './TodoDispatcher';
 
 const Actions = {
     // each function dispatches an action
-    addTodo(text) {
+    addTodo(text) {        
         TodoDispatcher.dispatch({
             type: TodoActionTypes.ADD_TODO,
             text,
