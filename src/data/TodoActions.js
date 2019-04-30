@@ -35,7 +35,13 @@ const Actions = {
         TodoDispatcher.dispatch({
             type: TodoActionTypes.DELETE_COMPLETED,
         })
-    }
+    },
+
+    toggleAllTodos() {
+        TodoDispatcher.dispatch({
+            type: TodoActionTypes.TOGGLE_ALL_TODOS,
+        });
+    },
 };
 
 export default Actions;

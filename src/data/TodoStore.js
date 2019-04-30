@@ -49,7 +49,14 @@ class TodoStore extends ReduceStore {
                 return state.filter(
                     todo => !todo.complete
                 );
+
+            case TodoActionTypes.TOGGLE_ALL_TODOS:
+                if (state.find(todo => !todo.complete)) {
+                    return state.map(todo => todo.set('complete', true));
+                }
                 
+                return state.map(todo => todo.set('complete', false));
+
             default:
                 return state;
         }

@@ -75,6 +75,11 @@ function Footer(props) {
             >
                 Delete Completed
             </button>
+            <button
+                onClick={() => props.onToggleAllTodos()}
+            >
+                Mark All as Complete
+            </button>
         </footer>
     )
 }
