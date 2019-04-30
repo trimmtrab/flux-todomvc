@@ -29,6 +29,12 @@ const Actions = {
             type: TodoActionTypes.UPDATE_DRAFT,
             text,
         })
+    },
+
+    deleteCompleted() {
+        TodoDispatcher.dispatch({
+            type: TodoActionTypes.DELETE_COMPLETED,
+        })
     }
 };
 
